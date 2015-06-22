@@ -11,6 +11,7 @@
   ],
   "dependencies": {
     "angular": "~1.4.1",
-    "threejs": "*"
+    "threejs": "*",
+    "threex": "*"
   }
 }
