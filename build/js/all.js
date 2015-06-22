@@ -1,8 +1,15 @@
-(function(){
+/**
+ * spyke
+ * @author : Oliver White
+ * @description global variable spyke
+ */
+
+var spyke = spyke || {};
+
+(function(spyke){
 	'use strict';
 
-	// MAIN
-	
+	// MAIN	
 	// standard global variables
 	var container, scene, camera, renderer, controls;
 
@@ -27,7 +34,7 @@
 		camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR);
 		scene.add(camera);
 
-		camera.position.set(0,150,400);
+		camera.position.set(0,0,400);
 		camera.lookAt(scene.position);	
 
 		renderer = new THREE.WebGLRenderer( {antialias:true} );
@@ -64,7 +71,7 @@
 		////////////	
 		var gridXZ = new THREE.GridHelper(100, 10);
 		gridXZ.setColors( new THREE.Color(0x006600), new THREE.Color(0x006600) );
-		gridXZ.position.set( 100,0,100 );
+		gridXZ.position.set( 0,0,100 );
 		scene.add(gridXZ);
 	}
 
@@ -85,7 +92,11 @@
 		renderer.render( scene, camera );
 	}
 
-}());
+	// store useful components in spyke object
+	spyke.camera = camera;
+	spyke.scene = scene;
+
+}(spyke));
 (function(THREE){
 	'use strict';
 

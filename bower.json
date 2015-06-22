@@ -12,6 +12,7 @@
   "dependencies": {
     "angular": "~1.4.1",
     "threejs": "*",
-    "threex": "*"
+    "threex": "*",
+    "bootstrap-sass": "~3.3.5"
   }
 }

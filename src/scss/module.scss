@@ -1,4 +1,38 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
 body, html {
 	margin: 0;
 	padding: 0;
+}
+
+#controls {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 600px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			color: #fff;
+			margin-bottom: 12px;
+		}
+
+		ul {
+			margin: inherit;
+			padding: inherit;
+			list-style: inherit;
+
+			li {
+				color: inherit;
+				width: 33.333%;
+				float: left;
+				@include clearfix;
+			}
+		}
+	}
 }

@@ -5,10 +5,12 @@ A way of manipulating the worlds rotation, mainly so the projection can be trans
 
 @class world
 	# The global world control. Graphically mimic the position of the projector
-	@var rotation x,y,z
-	@var position x,y,z
-	@func setRotation
-	@func setPosition
+	@var rotation x,y,z (-)
+	@var position x,y,z (-)
+	@func setRotation (-)
+	@func setPosition (-)
+	@func setCameraLens
+	@func setCameraLocation
 	@calibration
 		# future addition for calculating position to the real world
 

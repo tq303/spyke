@@ -10,18 +10,35 @@
 
 	<div ng-controller="MainCtrl as vm">
 		<!-- Controller -->
+
 		<div id="spyke"></div>
-		
+		<div id="controls">
+			<ul>
+				<li ng-repeat="control in vm.controlOutput">
+					{{ control.title }}
+					<ul>
+						<li ng-repeat="option in control.attrs">
+							{{ option.title }} : {{ option.value }}
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
 	</div>
 
+	<!-- bower -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/threejs/build/three.js"></script>
 
+	<!-- contributor -->
 	<script src="src/js/trackballcontrols.three.js"></script>
 
-	<script src="src/app.js"></script>
-
+	<!-- webgl -->
 	<script src="src/js/module.js"></script>
+
+	<!-- angular -->
+	<script src="src/app.js"></script>
 	<script src="build/views/templates.js"></script>
 
 </body>
