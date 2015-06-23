@@ -11,7 +11,7 @@ var spyke = spyke || {};
 
 	// MAIN	
 	// standard global variables
-	var container, scene, camera, renderer, controls;
+	var container, scene, camera, renderer, controls, tilt;
 
 	// custom global variables
 	var mesh;
@@ -24,7 +24,7 @@ var spyke = spyke || {};
 	{
 		// SCENE
 		scene = new THREE.Scene();
-		// CAMERA
+		// CAMERAcontrols
 		var SCREEN_WIDTH = window.innerWidth, SCREEN_HEIGHT = window.innerHeight;
 		var VIEW_ANGLE = 45, 
 			ASPECT = SCREEN_WIDTH / SCREEN_HEIGHT, 
@@ -60,6 +60,9 @@ var spyke = spyke || {};
 		controls.keys = [ 65, 83, 68 ];
 
 		controls.addEventListener( 'change', render );
+
+		// y tilt control
+		
 
 		// LIGHT
 		var light = new THREE.PointLight(0xffffff);

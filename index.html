@@ -22,6 +22,7 @@
 					<ul>
 						<li ng-repeat="option in control.attrs">
 							{{ option.title }} : {{ option.value }}
+							<button class="btn btn-danger" ng-click="vm.resetOptionValue( option )">X</button>
 						</li>
 					</ul>
 				</li>
@@ -36,6 +37,7 @@
 
 	<!-- contributor -->
 	<script src="src/js/trackballcontrols.three.js"></script>
+	<script src="src/js/tiltControl.three.js"></script>
 
 	<!-- webgl -->
 	<script src="src/js/module.js"></script>

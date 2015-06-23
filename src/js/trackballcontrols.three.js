@@ -352,7 +352,6 @@
 		};
 
 		// listeners
-
 		function keydown( event ) {
 
 			if ( _this.enabled === false ) return;
