@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node .",
     "http": "http-server -a localhost -p 8080 -c-1"
   },
   "author": "",
