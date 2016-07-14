@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "postinstall": "gulp",
     "start": "node .",
     "http": "http-server -a localhost -p 8080 -c-1"
   },
@@ -25,6 +26,7 @@
   "dependencies": {
     "angular": "^1.5.7",
     "bootstrap-sass": "^3.3.6",
+    "express": "^4.14.0",
     "three": "^0.79.0",
     "threex": "^1.0.0"
   }
